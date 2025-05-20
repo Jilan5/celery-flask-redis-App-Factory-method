@@ -82,7 +82,7 @@ flask-celery-project/
     └── config.py
 ```
 
-First, let's create the factory function in "project/__init__.py":
+First, let's create the factory function in project/__init__.py:
 
 ```python name=project/__init__.py
 import os
