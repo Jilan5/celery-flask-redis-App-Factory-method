@@ -82,7 +82,7 @@ flask-celery-project/
     └── config.py
 ```
 
-First, let's create the factory function in project/__init__.py:
+First, let's create the factory function in "project/__init__.py":
 
 ```python name=project/__init__.py
 import os
@@ -172,7 +172,7 @@ project/
     └── models.py
 ```
 
-```python name=project/users/__init__.py
+```bash name=project/users/__init__.py
 from flask import Blueprint
 
 users_blueprint = Blueprint("users", __name__, url_prefix="/users", template_folder="templates")
