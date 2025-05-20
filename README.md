@@ -474,6 +474,13 @@ CELERY_RESULT_BACKEND=redis://redis:6379/0
 
 ### 3.3 Create Docker Configuration Files
 
+
+```bash
+└── compose
+    └── local
+        └── flask
+            └── Dockerfile
+```
 Create the Dockerfile at "compose/local/flask/Dockerfile":
 
 ```dockerfile name=compose/local/flask/Dockerfile
