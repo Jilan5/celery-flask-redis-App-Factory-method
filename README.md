@@ -171,15 +171,15 @@ project/
     ├── __init__.py
     └── models.py
 ```
-
-```bash name=project/users/__init__.py
+In name=project/users/__init__.py file:
+```python name=project/users/__init__.py
 from flask import Blueprint
 
 users_blueprint = Blueprint("users", __name__, url_prefix="/users", template_folder="templates")
 
 from . import models  # noqa
 ```
-
+In name=project/users/models.py file:
 ```python name=project/users/models.py
 from project import db
 
