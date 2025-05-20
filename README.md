@@ -527,6 +527,7 @@ ENTRYPOINT ["/entrypoint"]
 ### 3.4 Create Entry and Start Scripts
 
 Create the following scripts:
+in name=compose/local/flask/entrypoint file:
 
 ```bash name=compose/local/flask/entrypoint
 #!/bin/bash
@@ -572,7 +573,7 @@ done
 
 exec "$@"
 ```
-
+in name=compose/local/flask/start file:
 ```bash name=compose/local/flask/start
 #!/bin/bash
 
@@ -583,7 +584,7 @@ set -o nounset
 flask db upgrade
 flask run --host=0.0.0.0
 ```
-
+in name=compose/local/flask/celery/worker/start file:
 ```bash name=compose/local/flask/celery/worker/start
 #!/bin/bash
 
@@ -592,7 +593,7 @@ set -o nounset
 
 celery -A app.celery worker --loglevel=info
 ```
-
+in name=compose/local/flask/celery/beat/start file:
 ```bash name=compose/local/flask/celery/beat/start
 #!/bin/bash
 
@@ -602,7 +603,7 @@ set -o nounset
 rm -f './celerybeat.pid'
 celery -A app.celery beat -l info
 ```
-
+in name=compose/local/flask/celery/flower/start file:
 ```bash name=compose/local/flask/celery/flower/start
 #!/bin/bash
 
