@@ -1,4 +1,5 @@
-# Flask App Factory with Celery and Redis
+# Flask App Factory with Celery, Redis Along with Docker Compose
+
 
 ## Table of Contents
 - [Introduction](#introduction)
