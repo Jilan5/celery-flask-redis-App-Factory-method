@@ -1,7 +1,7 @@
 # Flask App Factory with Celery, Redis Along with Docker Compose
 
 
-## Table of Contents
+## Objectives and Table of Contents
 - [Introduction](#introduction)
 - [Part 1: Setting Up the Flask App Factory](#part-1-setting-up-the-flask-app-factory)
   - [1.1 Setting Up the Environment](#11-setting-up-the-environment)
